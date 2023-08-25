@@ -4,11 +4,11 @@ USER root
 RUN jenkins-plugin-cli --plugins workflow-aggregator && \
     jenkins-plugin-cli --plugins github && \
     jenkins-plugin-cli --plugins ws-cleanup && \
-	jenkins-plugin-cli --plugins simple-theme-plugin && \
-	jenkins-plugin-cli --plugins kubernetes && \
-	jenkins-plugin-cli --plugins docker-workflow && \
-	jenkins-plugin-cli --plugins kubernetes-cli && \
-	jenkins-plugin-cli --plugins github-branch-source
+    jenkins-plugin-cli --plugins simple-theme-plugin && \
+    jenkins-plugin-cli --plugins kubernetes && \
+    jenkins-plugin-cli --plugins docker-workflow && \
+    jenkins-plugin-cli --plugins kubernetes-cli && \
+    jenkins-plugin-cli --plugins github-branch-source
 
 # install Maven, Java, Docker, AWS
 RUN apk add --no-cache maven \
